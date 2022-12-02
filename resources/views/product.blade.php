@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('master')
 @section('content')
 
 <h2>This is product section</h2>
