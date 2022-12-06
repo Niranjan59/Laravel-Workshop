@@ -34,7 +34,13 @@
         background-color: #35443585 !important;
     }
     .trending-image{
-        height: 100px;
+        
+    margin: 20px;
+    width: 250px;
+    height:250px;
+    padding: 10px;
+    border: 1px solid rgb(160, 151, 151);
+    border-radius: 20px;
     }
     .trening-item{
         float: left;
@@ -42,6 +48,7 @@
     }
     .trending-wrapper{
         margin: 30px;
+        
     }
     .detail-img{
         height: 200px;

@@ -1,6 +1,3 @@
-<div style="clear:both" class="panel panel-default">
-    <div class="panel-body">
-      Panel content
-    </div>
-    <div class="panel-footer">Panel footer</div>
-  </div>
+<footer>
+    <p class="text-center my-4 p-5 display-2">Copyright &copy; Niranjan Pun 2022</p>
+</footer>
