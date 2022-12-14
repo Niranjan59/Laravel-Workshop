@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Cart;
 use App\Models\Order;
-
 use Session;
 use Illuminate\Support\Facades\DB;
 
@@ -15,7 +14,7 @@ class ProductController extends Controller
     //
     function index()
     {
-        $data = Product::all();
+        $data = Product::paginate(6);
 
         return view('product', ['products' => $data]);
     }

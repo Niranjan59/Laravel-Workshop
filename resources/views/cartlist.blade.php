@@ -24,7 +24,7 @@
             </div>
             @endforeach
           </div>
-          <a class="btn btn-success" href="ordernow">Order Now</a> <br> <br>
+          <a class="btn btn-info" href="ordernow">Pay with khalti</a> <br> <br>
 
      </div>
 </div>

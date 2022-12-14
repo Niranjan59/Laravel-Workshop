@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>E-comm Project</title>
+    <title>Laravel Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
 
 <!-- Optional theme -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 <body>
     {{View::make('header')}}
@@ -25,10 +30,11 @@
         padding-top: 100px;
     }
     img.slider-img{
-        height: 400px !important
+        height: 400px !important;
+        width: 400px !important;    
     }
     .custom-product{
-        height: 600px
+        height: 600px;
     }
     .slider-text{
         background-color: #35443585 !important;
@@ -36,16 +42,30 @@
     .trending-image{
         
     margin: 20px;
-    width: 250px;
-    height:250px;
+    width: 200px;
+    height:200px;
     padding: 10px;
-    border: 1px solid rgb(160, 151, 151);
-    border-radius: 20px;
     }
-    .trening-item{
+    .trending-item{
+        display: flex;      
+        margin: 15px;
         float: left;
         width: 20%;
     }
+    .prd_name{
+        color:rgb(37, 26, 26);
+        font-size: 20px;
+        text-align: center;
+
+
+        
+    }
+    .prd_name:hover{
+        text-decoration: none;
+
+        
+}
+    
     .trending-wrapper{
         margin: 30px;
         
@@ -61,5 +81,17 @@
         margin-bottom: 20px;
         padding-bottom: 20px
     }
+    .navbar{
+        background-color: rgb(155, 155, 136);
+    
+    }
+    /* .footer{
+        display: inline-flex;
+        text-align: center center;
+        font-size: 2rem;
+        
+    } */
+    /*footer css*/
+   
 </style>
 </html>

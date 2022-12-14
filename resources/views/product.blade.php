@@ -38,13 +38,14 @@
       
 
       <div class="trending-wrapper">
-        <h3 class="display-3">Trending Products</h3>
+        <h3 style="text-align:center; font-weight:bold; text-shadow:1px 1px 1px grey; font-size:25px;" class="display-3">Trending Products</h3>
+        <hr>
         @foreach($products as $item)
-        <div class="trening-item " style=" ">
+        <div class="trending-item " style=" ">
           <a href="detail/{{$item['id']}}">
           <img class="trending-image" src="{{$item['gallery']}}">
           <div class="">
-            <h3 class="font-weight-normal text-warning">{{$item['name']}}</h3>
+            <h3 class="prd_name">{{$item['name']}}</h3>
 
 
           </div>
@@ -52,7 +53,12 @@
         </div>
     
         @endforeach
+
       </div>
+
       </div>
+
 </div>
+{{$products->links()}}
+
 @endsection
