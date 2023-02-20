@@ -44,9 +44,6 @@ class ProductSeeder extends Seeder
                 "category" => "powerbank",
                 "gallery" => "https://m.media-amazon.com/images/I/71Linf+GHuL._AC_SL1500_.jpg"
             ],
-
-        
-
             
             [
                 'name' => 'Oppo mobile',
