@@ -61,7 +61,7 @@
       // replace the publicKey with yours
       "publicKey": "test_public_key_99697f8fd7fc41e8b922cb5f84cf4e82",
       "productIdentity": "1234567890",
-      "productName": "Panasonic TV",
+      "productName": "Panasonic TV ",
       "productUrl": "http://127.0.0.1:8000/detail/2",
       "paymentPreference": [
           "KHALTI",
@@ -86,7 +86,7 @@
                                    data: payload,
                                     success: function(response)
                                      { 
-                                      document.getElementById("message").innerHTML = " <div class='alert alert-success alert-dismissible fade in'> <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Bravo!</strong> Payment Successfully done. </div>";
+                                      document.getElementById("message").innerHTML = " <div class='alert alert-success alert-dismissible fade in'> <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Bravo! Payment Successfully done.</strong> </div>";
                                     },
                                       error: function(data) 
                                       {
@@ -109,7 +109,8 @@
   var btn = document.getElementById("payment-button");
   btn.onclick = function () {
       // minimum transaction amount must be 10, i.e 1000 in paisa.
-      checkout.show({amount: 10000});
+      checkout.show({amount:  10000});
+      // checkout.show({amount:  {{$total+100}}*100});
   }
 </script>
 
