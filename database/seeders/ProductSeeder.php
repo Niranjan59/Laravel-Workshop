@@ -17,19 +17,52 @@ class ProductSeeder extends Seeder
         //
         DB::table('products')->insert([
             [
+                'name' => 'Iphone 12',
+                "price" => "123000",
+                "description" => "Portable device with flexible binding",
+                "category" => "mobile",
+                "gallery" => "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg"
+            ],
+            [
+                'name' => 'Ekster Parliament Smart Wallet',
+                "price" => "193000",
+                "description" => "The Ekster Parliament is a smart bifold wallet with RFID coating",
+                "category" => "wallet",
+                "gallery" => "https://m.media-amazon.com/images/I/51MhA--96hL._AC_SY355_.jpg"
+            ],
+            [
+                'name' => 'Peak Design Tech Pouch',
+                "price" => "79300",
+                "description" => "The Peak Design Tech Pouch is a stylish and exceptionally made",
+                "category" => "pouch",
+                "gallery" => "https://m.media-amazon.com/images/I/619t1EVwrML._AC_SL1024_.jpg"
+            ],
+            [
+                'name' => 'Anker 737 Power Bank',
+                "price" => "21300",
+                "description" => "Anker’s 737 Power Bank can charge your laptop via a fast USB",
+                "category" => "powerbank",
+                "gallery" => "https://m.media-amazon.com/images/I/71Linf+GHuL._AC_SL1500_.jpg"
+            ],
+
+        
+
+            
+            [
                 'name' => 'Oppo mobile',
-                "price" => "300",
+                "price" => "85700",
                 "description" => "A smartphone with 8gb ram and much more feature",
                 "category" => "mobile",
                 "gallery" => "https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A52-6-GFUTU6297453D3D253C/1592019058170_0..png"
             ],
             [
-                'name' => 'Panasonic Tv',
-                "price" => "400",
-                "description" => "A smart tv with much more feature",
-                "category" => "tv",
-                "gallery" => "https://i.gadgets360cdn.com/products/televisions/large/1548154685_832_panasonic_32-inch-lcd-full-hd-tv-th-l32u20.jpg"
+                'name' => 'Zyllion Shiatsu Back and Neck Massager',
+                "price" => "39000",
+                "description" => "There's nothing better than a good massage",
+                "category" => "massager",
+                "gallery" => "https://m.media-amazon.com/images/I/918T44mRPUL._AC_SL1500_.jpg"
             ],
+         
             [
                 'name' => 'Soni Tv',
                 "price" => "500",

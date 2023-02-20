@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PaymentController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +36,4 @@ Route::get("removecart/{id}", [ProductController::class, 'removeCart']);
 Route::get("ordernow", [ProductController::class, 'orderNow']);
 Route::post("orderplace", [ProductController::class, 'orderPlace']);
 Route::get("myorders", [ProductController::class, 'myOrders']);
+Route::post("khalti/verify", [PaymentController::class, 'verify'])->name('khalti.verify');
